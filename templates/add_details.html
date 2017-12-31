@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Book Store</title>
+    <meta charset="utf-8"/>
+</head>
+<body>
+    <h1> ADD DETAILS</h1>
+    <br>
+    <form method="post" action="/add_details">
+        <label>Book </label>
+        <input id="book" name="book" type="text"/>
+        <br>
+        <label>Authors: </label>
+        <input id="author" name="author" type="text"/>
+        <br>
+        <input type="submit"/>
+    </form>
+    {% for book in books %}
+    <li>{{ book.id }} - {{ book.title }} </li>
+    {% endfor %}
+   </body>
+</html>
+
